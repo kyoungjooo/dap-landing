@@ -16,6 +16,7 @@
 --color-primary: #2962FF;
 --color-primary-hover: #1E54EA;
 --color-focus: #ffd54a;
+--color-white:#ffffff;
 
 /* blue */
 --blue-50: #F6F9FF;
@@ -81,13 +82,14 @@
 
 
 
-body {font-family: var(--ff-primary);letter-spacing: 0;font-variant-numeric: tabular-nums;word-break: keep-all;overflow-wrap: break-word; background-color: var(--blue-50);}
-.headline1{font-size: 1.75rem; line-height: 140%;} /* 28px */
-.title1{font-size: 1.5rem; line-height: 140%;}     /* 24px */
-.title4{font-size: 1rem; line-height: 145%;}       /* 16px */
-.body1{font-size: 0.9375rem; line-height: 145%;}   /* 15px */
-.body2{font-size: 0.875rem; line-height: 145%;}    /* 14px */
-.body3{font-size: 0.8125rem; line-height: 145%;}    /* 13px */
+body {font-family: var(--ff-primary);letter-spacing: 0;font-variant-numeric: tabular-nums;word-break: keep-all;overflow-wrap: break-word; background-color: var(--blue-50); color: var(--text-main);}
+.headline1{font-size: 1.75rem; line-height: 145%;} /* 28px */
+.title1{font-size: 1.5rem; line-height: 145%;}     /* 24px */
+.title3{font-size: 1.125rem; line-height: 150%;}   /* 18px */
+.title4{font-size: 1rem; line-height: 150%;}       /* 16px */
+.body1{font-size: 0.9375rem; line-height: 150%;}   /* 15px */
+.body2{font-size: 0.875rem; line-height: 150%;}    /* 14px */
+.body3{font-size: 0.8125rem; line-height: 150%;}    /* 13px */
 
 .f-bold { font-weight: 600; }
 .f-semibold { font-weight: 500; }
