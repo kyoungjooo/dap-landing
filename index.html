@@ -17,7 +17,7 @@
             <p class="hero__eyebrow headline1 f-bold">
               결제 시스템의 새로운 기준
             </p>
-            <h1 class="hero__title headline1 f-bold">
+            <h1 id="hero-title" class="hero__title headline1 f-bold">
               클라우드 직승인 플랫폼 DAP
             </h1>
             <p class="hero__desc title4 f-regular">
@@ -38,10 +38,10 @@
       </section>
 
       <!-- comparison -->
-      <section class="sc comparison" aria-labelledby="가맹점 수수료 비교">
+      <section class="sc comparison" aria-labelledby="comparison-title">
         <div class="sc__inner comparison__inner">
           <div class="comparison__content">
-            <h2 class="sc__title">
+            <h2 id="comparison-title" class="sc__title">
               직승인 여부에 따라<br />
               가맹점 수수료가 달라집니다
             </h2>
@@ -99,10 +99,10 @@
       </section>
 
       <!-- benefits -->
-      <section class="sc benefits" aria-labelledby="DAP 핵심 가치">
+      <section class="sc benefits" aria-labelledby="benefits-title">
         <div class="sc__inner benefits__inner">
           <div class="benefits__content">
-            <h2 class="sc__title">
+            <h2 id="benefits-title" class="sc__title">
               DAP을 통해 누구나<br />
               직승인 혜택을 누릴 수 있습니다
             </h2>
@@ -168,10 +168,10 @@
         </div>
       </section>
       <!-- process -->
-      <section class="sc process" aria-labelledby="DAP 결제 연결 절차">
+      <section class="sc process" aria-labelledby="process-title">
         <div class="sc__inner process__inner">
           <div class="process__content">
-            <h2 class="sc__title">DAP 결제 연결 절차</h2>
+            <h2 id="process-title" class="sc__title">DAP 결제 연결 절차</h2>
             <ol class="process__list">
               <!-- step 1 -->
               <li class="process__item">
@@ -272,6 +272,77 @@
           </div>
         </div>
       </section>
+
+      <!-- comparison-table -->
+      <section
+        class="sc comparison-table"
+        aria-labelledby="comparison-table-title"
+      >
+        <div class="sc__inner comparison-table__inner">
+          <h2
+            id=" comparison-table-title"
+            class="sc__title comparison-table__title"
+          >
+            표준 직승인 vs DAP 직승인
+          </h2>
+
+          <p class="sc__desc comparison-table__desc">
+            가맹점과 카드사 모두 비용 부담과<br />
+            기존 결제 구조의 한계에 직면해 있습니다.<br />
+            이제는 더 효율적인 결제 환경이 필요한 시점입니다.
+          </p>
+
+          <div class="comparison-table__wrap">
+            <table class="comparison-table__table body2">
+              <colgroup>
+                <col
+                  class="comparison-table__colgroup comparison-table__colgroup--label"
+                />
+                <col class="comparison-table__colgroup" />
+                <col
+                  class="comparison-table__colgroup comparison-table__colgroup--highlight"
+                />
+              </colgroup>
+
+              <caption class="sr-only">
+                표준 직승인과 DAP 직승인의 차이 비교
+              </caption>
+
+              <thead>
+                <tr>
+                  <th scope="col" class="comparison-table__col">구분</th>
+                  <th scope="col" class="comparison-table__col">표준 직승인</th>
+                  <th scope="col" class="comparison-table__col is-highlight">
+                    DAP 직승인
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th scope="row">개발 주체</th>
+                  <td>가맹점</td>
+                  <td class="is-highlight">카드사</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">개발 공수</th>
+                  <td>발생</td>
+                  <td class="is-highlight">없음</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">투자 부담</th>
+                  <td>있음</td>
+                  <td class="is-highlight">없음</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- why-dap -->
     </main>
   </body>
 </html>

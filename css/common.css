@@ -97,6 +97,17 @@ body {font-family: var(--ff-primary);letter-spacing: 0;font-variant-numeric: tab
 .f-medium { font-weight: 400; }
 .f-regular { font-weight: 300; }
 
+.sr-only{
+  position:absolute;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+
+  clip-path: inset(50%);
+  white-space:nowrap;
+}
+
+
 /* br */
 
 /* btn */
