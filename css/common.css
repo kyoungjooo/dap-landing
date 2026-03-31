@@ -2,7 +2,7 @@
 @import url("./reset.css");
 @import url("./main.css");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 * {
@@ -38,12 +38,13 @@
 
 /* font */
 --ff-primary: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
---ff-secondary: "";
+--ff-secondary: "Poppins", "sans-serif";
 
 --container-width: 1440px;
 --scrollbar-color: var(--primary);
 
 /* padding */
+  --space-2: 0.125rem;
   --space-4: 0.25rem;
   --space-8: 0.5rem;
   --space-12: 0.75rem;
@@ -111,6 +112,8 @@ body {font-family: var(--ff-primary);letter-spacing: 0;font-variant-numeric: tab
   background:var(--blue-50);
   color:var(--color-primary);
 }
+
+.badge{display: inline-block; font-size: 0.6875rem; padding: 0.4em 0.4em; background-color: var(--color-white); border-radius: var(--radius-xs); font-weight: 500;}
 
 
 @media (hover: hover) {
