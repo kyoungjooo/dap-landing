@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+.sc{position: relative; overflow-x: hidden; }
+.sc__inner{padding-inline: var(--space-16);  width:100%;  max-width: var(--container-width); margin-inline: auto;}
+.sc__title{margin-bottom: var(--space-20); color: var(--blue-900); font-weight: 700; font-size: 1.5rem; line-height: 140%; text-align: center;}
+.sc__desc {font-size: 0.9375rem; line-height: 145%;  color: var(--text-sub1); text-align: center;}
+
+/* hero */
+.hero{
+height: 100vh; display: flex; align-items: center;
+.hero__inner{display: flex; flex-direction: column; align-items: center;}
+.hero__content{text-align: center;}
+.hero__title{color: var(--color-text); margin-bottom: var(--space-24);}
+.hero__eyebrow{color: var(--color-text);}
+.hero__bg {
+position: absolute;inset: 0;
+background:
+    linear-gradient(
+      180deg,
+    rgba(1, 44, 127, 1) 0%,
+    rgba(31, 81, 191, 1) 50%,
+    rgba(1, 44, 127, 1) 100%
+    );pointer-events: none;z-index: -1;
+}
+.hero__desc{color: var(--color-text); opacity: 0.65;}}
+.hero__visual{width: clamp(480px, 48vw, 700px);min-height: 250px;background:url("../source/images/hero.png") center / contain no-repeat;}
+.hero__actions{width: 100%;}
+
+
+/* comparison */
+.comparison{
+ .comparison__inner{padding-block: var(--space-100); text-align: center;}
+ .comparison__note{display: inline-block; border-radius: var(  --radius-sm); color: var(--text-sub2); padding: 0.2em 0.5714em; margin-top: var(--space-12); background-color: var(--blue-100);}
+ .comparison-cards__list{display: grid; margin-top: var(--space-40); grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap)}
+ .comparison-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25em 1em ;
+  border-radius: var(--radius-lg);
+  background: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: var(--shadow-1);
+}
+.comparison-card__title{margin-bottom: 0.5em; margin-top: 1.3333em;}
+.comparison-card:first-child .comparison-card__title{color: #FF7F3E;}
+.comparison-card:last-child .comparison-card__title{color: var(--blue-700)}
+.comparison-card__label{color: var(--blue-800); background-color: var(--blue-100); padding: 0.6571em 0.4em; width: 100%; margin-bottom: 1em; border-radius: 999px;  }
+.comparison-card__desc{color: var(--text-sub2);}  
+.comparison-card__visual{  display: flex;align-items: center;justify-content: center;}
+.comparison-card__visual img{display: block; width: 100%; min-width: 90px; max-width:  200px; height: auto; aspect-ratio: 1/1; object-fit: contain;
+  
+}
+}
