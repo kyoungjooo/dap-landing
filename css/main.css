@@ -91,32 +91,62 @@ background: linear-gradient(135deg, #1D3154 0%, #0039A4 100%);
 .comparison-table__title,.comparison-table__desc{color: var(--color-text);}
 .comparison-table__desc{opacity: 0.7;}
 .comparison-table__inner{padding-block: var(--space-80); text-align: center;}
-.comparison-table__wrap {
-  margin-top: var(--space-40);
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  background-color: white;
-}  
-/* table */
+.comparison-table__wrap {margin-top: var(--space-40);border-radius: var(--radius-xl);overflow: hidden;background-color: white;}  
 .comparison-table__table{width:100%;}
 .comparison-table__table th{padding:1.1429em;}
-
-/* col width */
 .comparison-table__colgroup--label{width:clamp(100px,14.9306vw,215px);}
-
-/* header + row label column */
 .comparison-table__table thead th:first-child,
 .comparison-table__table tbody th{text-align:left;background-color:#F7F7FB;}
-
-
-/* dap column 강조 */
 .comparison-table__table th:last-child,
-.comparison-table__table .is-highlight{font-weight:600;color:var(--color-primary);}
-
-
-/* 표준 직승인 컬럼 텍스트 톤 */
+.comparison-table__table .is-highlight{font-weight:600;color:var(--blue-900);}
 .comparison-table__table thead th:nth-of-type(2),
 .comparison-table__table tbody td:first-of-type{color:var(--text-sub1);}
+.comparison-table__table tbody tr{border-top:1px solid #F1F1F5;}}
 
-.comparison-table__table tbody tr{border-top:1px solid #F1F1F5;}
+/* why-dap */
+.why-dap__grid{display:flex;flex-direction:column;gap:var(--space-8);}
+.why-dap-card{padding:var(--space-24) var(--space-20);border-radius:var(--radius-xl);}
+.why-dap-card--merchant{background:linear-gradient(135deg,rgba(246,242,254,1), rgba(238,230,250,1))}
+.why-dap-card--issuer{background:linear-gradient(135deg,rgba(240,246,255,1), rgba(212,224,255,1))}
+.why-dap-card__title{margin-bottom:var(--space-16);text-align:center;}
+.why-dap-card__badge{display:inline-block;padding:0.5em 1em;border-radius:999px;background:rgba(255,255,255,0.25);font-weight:500;color: var(--text-sub1);border:1px solid transparent;border-radius:999px;
+  background:
+    linear-gradient(rgba(251,250,253,0.75), rgba(251,250,253,0.15)) padding-box,
+    linear-gradient(
+      135deg,
+      rgba(251,250,253,1),
+      rgba(251,250,253,0.15)
+    ) border-box;
+}
+.why-dap-card__list{display:flex;flex-direction:column;gap:var(--space-16);}
+.why-dap-card__item{display:flex;align-items:flex-start;gap:var(--space-8)}
+.why-dap-card__item::before{
+  content:"";
+  display: inline-block;
+  width: clamp(14px,1.3889vw, 20px);
+  aspect-ratio: 1/1;
+  top: -2px;
+  background:url("../source/images/checkbox-purple.png") center / 100% no-repeat;
+}
+.why-dap-card--issuer .why-dap-card__item::before{  background:url("../source/images/checkbox-blue.png") center / 100% no-repeat;}
+.why-dap-card--merchant .why-dap-card__heading{color:#311B92}
+.why-dap-card--issuer .why-dap-card__heading{color: #002871}
+
+.why-dap-card__heading{ font-weight: 500;}
+.why-dap-card__desc{color:var(--text-sub1);font-size: 0.875rem; margin-top: var(--space-8); line-height: 150%;}
+
+/* clients */
+.clients{
+.clients__inner{text-align: center;}
+.clients__list{display: grid;  grid-template-columns:repeat(2, 1fr);; grid-template-rows: 4; gap: var(--gap); margin-bottom: var(--space-24);}
+.clients__card{height: clamp(52px, 5.6944vw ,82px); background-color: var(--color-white); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center;}
+.clients__logo.coupang{height: clamp(19px,1.5972vw,23px); position: relative; top: 2px;}
+.clients__logo.naver{height: clamp(14px,1.1806vw,17px);}
+.clients__logo.kakaopay{height: clamp(21px,1.6667vw,23px);}
+.clients__logo.woohyung{height: clamp(20px,1.5278vw,22px);}
+.clients__logo.olive{height: clamp(12px,1.0417vw,14px);}
+.clients__logo.galaxia{height: clamp(35px,3.1944vw,45px);}
+.clients__logo.kg{height: clamp(32px,2.9167vw,42px);}
+.clients__logo.kt{height:clamp(24px,1.9444vw,28px);position: relative; top: 1px;}
+.clients__caption{ color: var(--text-sub2);}
 }
