@@ -1,16 +1,25 @@
 @charset "utf-8";
 
 .sc{position: relative; overflow-x: hidden; }
-.sc__inner{padding-inline: var(--space-16); padding-top: var(--space-100);  width:100%;  max-width: var(--container-width); margin-inline: auto;}
-.sc__title{margin-bottom: var(--space-20); color: var(--blue-900); font-weight: 700; font-size: 1.5rem; line-height: 140%; text-align: center;}
-.sc__desc {font-size: 0.9375rem; line-height: 145%;  color: var(--text-sub2); text-align: center; margin-bottom: var(--space-40); font-weight: 400;}
+.sc__inner{padding-inline: var(--space-16); padding-top: clamp(var(--space-100),13.8889vw,var(--space-200));  width:100%;  max-width: var(--container-width); margin: 0 auto;}
+.sc__title{margin-bottom: clamp(var(--space-20),2.7778vw, var(--space-40)); color: var(--blue-900); font-weight: 700; font-size: clamp(1.5rem,3.3333vw,3rem); line-height: 140%; text-align: center;}
+.sc__desc {font-size: clamp(0.9375rem,1.5278vw,1.375rem); line-height: 150%;  color: var(--text-sub2); text-align: center; margin-bottom: clamp(var(--space-40),5.5556vw,var(--space-80)); font-weight: 400;}
+
+@media (min-width:768px){
+
+}
+
+@media (min-width:1200px){
+
+}
+
 
 /* hero */
 .hero{
-height: 100vh; display: flex; align-items: center;
-.hero__inner{display: flex; flex-direction: column; align-items: center;}
+height: 100vh; display: flex; align-items: center; justify-content: center; overflow-x: hidden;
+.hero__inner{display: flex; flex-direction: column; align-items: center; width: 100%; padding-inline: var(--space-16);}
 .hero__content{text-align: center;}
-.hero__title{color: var(--color-text); margin-bottom: var(--space-24);}
+.hero__title{color: var(--color-text); margin-bottom: clamp(var(--space-24),3.4722vw,3.125rem);}
 .hero__eyebrow{color: var(--color-text);}
 .hero__bg {
 position: absolute;inset: 0;
@@ -23,15 +32,21 @@ background:
     );pointer-events: none;z-index: -1;
 }
 .hero__desc{color: var(--color-text); opacity: 0.7;}}
-.hero__visual{width: clamp(480px, 48vw, 700px);min-height: 250px;background:url("../source/images/hero.png") center / contain no-repeat;}
-.hero__actions{width: 100%;}
+.hero__visual{width: clamp(480px, 48vw, 700px);min-height: 250px;margin-top: clamp(var(--space-20),5.5556vw, var(--space-80)); background:url("../source/images/hero.png") center / contain no-repeat;}
+.hero__actions{width: 100%; display: flex; justify-content: center;}
+
+@media (min-width:768px){
+.hero__actions{margin-top: var(--space-40);}
+}
+
+
 
 
 /* comparison */
 .comparison{
  .comparison__inner{ text-align: center;}
- .sc__desc.comparison__desc{margin-bottom: 0;}
- .comparison__note{display: inline-block; margin-bottom: var(--space-40); border-radius: var(  --radius-sm); color: var(--text-sub2); padding: 0.2em 0.5714em; margin-top: var(--space-12); background-color: var(--blue-100);}
+ .sc__desc.comparison__desc{margin-bottom: 0; color: var(--blue-700);}
+ .comparison__note{display: inline-block; margin-bottom: clamp(var(--space-40),5.5556vw,var(--space-80)); border-radius: var(  --radius-sm); color: var(--text-sub2); padding: 0.2em 0.5714em; margin-top: clamp(var(--space-12),2.7778vw,var(--space-32)); background-color: var(--blue-100);}
  .comparison-cards__list{display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap)}
  .comparison-card{
   display: flex;
@@ -52,6 +67,8 @@ background:
 .comparison-card__visual{  display: flex;align-items: center;justify-content: center;}
 .comparison-card__visual img{display: block; width: 100%; min-width: 90px; max-width:  200px; height: auto; aspect-ratio: 1/1; object-fit: contain;
 }
+@media (min-width:768px){
+.comparison-card__label{width: 40%;}}
 }
 
 /* benefits */
@@ -68,6 +85,9 @@ background:
  .benefit-card__subtitle{color: var(--text-sub2);}
  .benefit-card__divider{width: 50px; border:0;border-top:1.5px solid var(--blue-100); margin-block: var(--space-16);}
  .benefit-card__desc{color: var(--text-sub1);}
+ @media (min-width:768px){
+ .benefits__list{grid-template-columns: repeat(3,1fr);}
+ }
 }
 
 /* process */
@@ -145,8 +165,10 @@ background: linear-gradient(135deg, #1D3154 0%, #0039A4 100%);
 
 /* cta */
 .cta{
+background:linear-gradient(180deg,#F9FAFE,var(--blue-300));
 .cta__title{margin-bottom: var(--space-32);}
-.cta__inner{padding-block: clamp(9.375rem, 13.8889vw ,12.5rem); background:linear-gradient(180deg,#F9FAFE,var(--blue-300))}
+.cta__inner{padding-block: clamp(9.375rem, 13.8889vw ,12.5rem); }
+.cta-action{display: flex; justify-content: center;}
 }
 
 /* footer */

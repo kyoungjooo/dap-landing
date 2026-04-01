@@ -10,19 +10,21 @@
     <!-- main -->
     <main class="main">
       <!-- hero -->
-      <section class="sc hero" aria-labelledby="hero-title">
+      <section class="hero" aria-labelledby="hero-title">
         <div class="hero__bg" aria-hidden="true"></div>
-        <div class="sc__inner hero__inner">
+        <div class="hero__inner">
           <div class="hero__content">
-            <p class="hero__eyebrow headline1 f-bold">
+            <p class="hero__eyebrow headline1 f-semibold">
               결제 시스템의 새로운 기준
             </p>
             <h1 id="hero-title" class="hero__title headline1 f-bold">
               클라우드 직승인 플랫폼 DAP
             </h1>
             <p class="hero__desc title4 f-regular">
-              IT역량이 부족한 가맹점에서도<br />
-              카드사 직승인 혜택을 지원받을 수 있는<br />
+              IT역량이 부족한 가맹점에서도<br class="br-mobile" />
+              카드사 직승인 혜택을 <br class="br-tablet" /><br
+                class="br-pc"
+              />지원받을 수 있는<br class="br-mobile" />
               결제 환경을 제공합니다.
             </p>
           </div>
@@ -46,8 +48,8 @@
               가맹점 수수료가 달라집니다
             </h2>
             <p class="sc__desc comparison__desc">
-              연매출 500억 일반 가맹점보다<br />
-              5000억 초대형 직승인 가맹점의<br />
+              연매출 500억 일반 가맹점보다<br class="br-mobile" />
+              5000억 초대형 직승인 가맹점의<br class="br-mobile" />
               수수료가 더 낮습니다.
             </p>
             <span class="body2 comparison__note"
@@ -70,7 +72,7 @@
                 </h3>
 
                 <p class="comparison-card__desc body2">
-                  연매출 500억<br />
+                  연매출 500억<br class="br-mobile" />
                   VAN망 이용 가맹점
                 </p>
               </article>
@@ -89,7 +91,7 @@
                   낮은 수수료율
                 </h3>
                 <p class="comparison-card__desc body2">
-                  연매출 5000억<br />
+                  연매출 5000억<br class="br-mobile" />
                   직승인 가맹점
                 </p>
               </article>
@@ -108,7 +110,7 @@
             </h2>
             <p class="sc__desc">
               DAP 직승인은 가맹점향 결제 트렌드로<br />
-              재무, 마케팅, IT 등의 영역에서<br />
+              재무, 마케팅, IT 등의 영역에서<br class="br-mobile" />
               다양한 효과를 기대할 수 있습니다.
             </p>
             <ul class="benefits__list">
@@ -116,10 +118,10 @@
               <li class="benefits__item">
                 <article class="benefit-card">
                   <div class="benefit-card__icon" aria-hidden="true"></div>
-                  <h3 class="benefit-card__title f-bold title3">
+                  <h3 class="benefit-card__title f-bold title4">
                     개발 부담없이 직승인 도입
                   </h3>
-                  <p class="benefit-card__subtitle body1 f-medium">
+                  <p class="benefit-card__subtitle body2 f-medium">
                     투자, IT개발 없이 빠르게 도입 가능
                   </p>
                   <hr class="benefit-card__divider" aria-hidden="true" />
@@ -133,10 +135,10 @@
               <li class="benefits__item">
                 <article class="benefit-card">
                   <div class="benefit-card__icon" aria-hidden="true"></div>
-                  <h3 class="benefit-card__title f-bold title3">
+                  <h3 class="benefit-card__title f-bold title4">
                     결제 환경의 개선
                   </h3>
-                  <p class="benefit-card__subtitle body1 f-medium">
+                  <p class="benefit-card__subtitle body2 f-medium">
                     승인 속도 향상 및 안정적인 결제 처리
                   </p>
                   <hr class="benefit-card__divider" aria-hidden="true" />
@@ -150,10 +152,10 @@
               <li class="benefits__item">
                 <article class="benefit-card">
                   <div class="benefit-card__icon" aria-hidden="true"></div>
-                  <h3 class="benefit-card__title f-bold title3">
+                  <h3 class="benefit-card__title f-bold title4">
                     가맹점 수수료 인하 기회
                   </h3>
-                  <p class="benefit-card__subtitle body1 f-medium">
+                  <p class="benefit-card__subtitle body2 f-medium">
                     결제 비용 절감으로 수수료 협의 가능
                   </p>
                   <hr class="benefit-card__divider" aria-hidden="true" />
@@ -182,7 +184,7 @@
 
                   <div class="process__content">
                     <div class="process__header">
-                      <h3 class="process__title title4 f-semibold">
+                      <h3 class="process__title body1 f-semibold">
                         결제 컨설팅 제공
                       </h3>
 
@@ -215,7 +217,7 @@
 
                   <div class="process__content">
                     <div class="process__header">
-                      <h3 class="process__title title4 f-semibold">
+                      <h3 class="process__title body1 f-semibold">
                         결제 기관과 협의 지원
                       </h3>
 
@@ -247,7 +249,7 @@
 
                   <div class="process__content">
                     <div class="process__header">
-                      <h3 class="process__title title4 f-semibold">
+                      <h3 class="process__title body1 f-semibold">
                         결제 연결 지원
                       </h3>
 
@@ -522,9 +524,11 @@
             카드사와의 협의 및 기술 지원을 제공합니다. <br />
             (필요시 전문 컨설팅그룹의 비용절감 컨설팅 제공)
           </p>
-          <button type="button" class="btn btn-filled-primary w-full">
-            도입 의향서 작성하기
-          </button>
+          <div class="cta-action">
+            <button type="button" class="btn btn-filled-primary w-full">
+              도입 의향서 작성하기
+            </button>
+          </div>
         </div>
       </section>
 
