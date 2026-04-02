@@ -3,30 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>클라우드 직승인 플랫폼 DAP</title>
     <link rel="stylesheet" href="./css/common.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
   </head>
+
   <body>
     <!-- main -->
     <main class="main">
       <!-- hero -->
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="sc hero" aria-labelledby="hero-title">
         <div class="hero__bg" aria-hidden="true"></div>
         <div class="hero__inner">
           <div class="hero__content">
-            <p class="hero__eyebrow headline1 f-semibold">
-              결제 시스템의 새로운 기준
-            </p>
-            <h1 id="hero-title" class="hero__title headline1 f-bold">
-              클라우드 직승인 플랫폼 DAP
-            </h1>
-            <p class="hero__desc title4 f-regular">
-              IT역량이 부족한 가맹점에서도<br class="br-mobile" />
-              카드사 직승인 혜택을 <br class="br-tablet" /><br
-                class="br-pc"
-              />지원받을 수 있는<br class="br-mobile" />
-              결제 환경을 제공합니다.
-            </p>
+            <div class="text__clip">
+              <div class="fade-up">
+                <p class="hero__eyebrow headline1 f-semibold">
+                  결제 시스템의 새로운 기준
+                </p>
+                <h1 id="hero-title" class="hero__title headline1 f-bold">
+                  클라우드 직승인 플랫폼 DAP
+                </h1>
+              </div>
+            </div>
+            <div class="text__clip">
+              <p class="hero__desc title4 f-regular fade-up">
+                IT역량이 부족한 가맹점에서도<br class="br-mobile" />
+                카드사 직승인 혜택을 <br class="br-tablet" /><br
+                  class="br-pc"
+                />지원받을 수 있는<br class="br-mobile" />
+                결제 환경을 제공합니다.
+              </p>
+            </div>
           </div>
           <!-- hero 이미지 -->
           <div class="hero__visual" aria-hidden="true"></div>
@@ -43,15 +52,19 @@
       <section class="sc comparison" aria-labelledby="comparison-title">
         <div class="sc__inner comparison__inner">
           <div class="comparison__content">
-            <h2 id="comparison-title" class="sc__title">
-              직승인 여부에 따라<br />
-              가맹점 수수료가 달라집니다
-            </h2>
-            <p class="sc__desc comparison__desc">
-              연매출 500억 일반 가맹점보다<br class="br-mobile" />
-              5000억 초대형 직승인 가맹점의<br class="br-mobile" />
-              수수료가 더 낮습니다.
-            </p>
+            <div class="text__clip">
+              <h2 id="comparison-title" class="sc__title fade-up">
+                직승인 여부에 따라<br />
+                가맹점 수수료가 달라집니다
+              </h2>
+            </div>
+            <div class="text__clip">
+              <p class="sc__desc comparison__desc fade-up">
+                연매출 500억 일반 가맹점보다<br class="br-mobile" />
+                5000억 초대형 직승인 가맹점의<br class="br-mobile" />
+                수수료가 더 낮습니다.
+              </p>
+            </div>
             <span class="body2 comparison__note"
               >직승인에 따른 적격비용 차이 반영</span
             >
@@ -104,15 +117,19 @@
       <section class="sc benefits" aria-labelledby="benefits-title">
         <div class="sc__inner benefits__inner">
           <div class="benefits__content">
-            <h2 id="benefits-title" class="sc__title">
-              DAP을 통해 누구나<br />
-              직승인 혜택을 누릴 수 있습니다
-            </h2>
-            <p class="sc__desc">
-              DAP 직승인은 가맹점향 결제 트렌드로<br />
-              재무, 마케팅, IT 등의 영역에서<br class="br-mobile" />
-              다양한 효과를 기대할 수 있습니다.
-            </p>
+            <div class="text__clip">
+              <h2 id="benefits-title" class="sc__title fade-up">
+                DAP을 통해 누구나<br />
+                직승인 혜택을 누릴 수 있습니다
+              </h2>
+            </div>
+            <div class="text__clip">
+              <p class="sc__desc fade-up">
+                DAP 직승인은 가맹점향 결제 트렌드로<br />
+                재무, 마케팅, IT 등의 영역에서<br class="br-mobile" />
+                다양한 효과를 기대할 수 있습니다.
+              </p>
+            </div>
             <ul class="benefits__list">
               <!-- benefits item -->
               <li class="benefits__item">
@@ -122,7 +139,7 @@
                     개발 부담없이 직승인 도입
                   </h3>
                   <p class="benefit-card__subtitle body2 f-medium">
-                    투자, IT개발 없이 빠르게 도입 가능
+                    투자, IT개발 없이 <br class="br-tablet" />빠르게 도입 가능
                   </p>
                   <hr class="benefit-card__divider" aria-hidden="true" />
                   <p class="benefit-card__desc body2 f-regular">
@@ -139,7 +156,7 @@
                     결제 환경의 개선
                   </h3>
                   <p class="benefit-card__subtitle body2 f-medium">
-                    승인 속도 향상 및 안정적인 결제 처리
+                    승인 속도 향상 및 <br class="br-tablet" />안정적인 결제 처리
                   </p>
                   <hr class="benefit-card__divider" aria-hidden="true" />
                   <p class="benefit-card__desc body2 f-regular">
@@ -156,7 +173,7 @@
                     가맹점 수수료 인하 기회
                   </h3>
                   <p class="benefit-card__subtitle body2 f-medium">
-                    결제 비용 절감으로 수수료 협의 가능
+                    결제 비용 절감으로 <br class="br-tablet" />수수료 협의 가능
                   </p>
                   <hr class="benefit-card__divider" aria-hidden="true" />
                   <p class="benefit-card__desc body2 f-regular">
@@ -169,11 +186,16 @@
           </div>
         </div>
       </section>
+
       <!-- process -->
       <section class="sc process" aria-labelledby="process-title">
         <div class="sc__inner process__inner">
           <div class="process__content">
-            <h2 id="process-title" class="sc__title">DAP 결제 연결 절차</h2>
+            <div class="text__clip">
+              <h2 id="process-title" class="sc__title process__title fade-up">
+                DAP 결제 연결 절차
+              </h2>
+            </div>
             <ol class="process__list">
               <!-- step 1 -->
               <li class="process__item">
@@ -182,9 +204,9 @@
                     1
                   </span>
 
-                  <div class="process__content">
+                  <div class="process_detail">
                     <div class="process__header">
-                      <h3 class="process__title body1 f-semibold">
+                      <h3 class="process__step-title body1 f-semibold">
                         결제 컨설팅 제공
                       </h3>
 
@@ -215,9 +237,9 @@
                     2
                   </span>
 
-                  <div class="process__content">
+                  <div class="process__detail">
                     <div class="process__header">
-                      <h3 class="process__title body1 f-semibold">
+                      <h3 class="process__step-title body1 f-semibold">
                         결제 기관과 협의 지원
                       </h3>
 
@@ -247,9 +269,9 @@
                     3
                   </span>
 
-                  <div class="process__content">
+                  <div class="process__detail">
                     <div class="process__header">
-                      <h3 class="process__title body1 f-semibold">
+                      <h3 class="process__step-title body1 f-semibold">
                         결제 연결 지원
                       </h3>
 
@@ -281,18 +303,20 @@
         aria-labelledby="comparison-table-title"
       >
         <div class="sc__inner comparison-table__inner">
-          <h2
-            id=" comparison-table-title"
-            class="sc__title comparison-table__title"
-          >
-            표준 직승인 vs DAP 직승인
-          </h2>
-
-          <p class="sc__desc comparison-table__desc">
-            불필요한 개발 공수와 투자 부담 없이<br />
-            더 간편하게 직승인 환경을 구축할 수 있습니다.
-          </p>
-
+          <div class="text__clip">
+            <h2
+              id=" comparison-table-title"
+              class="sc__title comparison-table__title fade-up"
+            >
+              표준 직승인 vs DAP 직승인
+            </h2>
+          </div>
+          <div class="text__clip">
+            <p class="sc__desc comparison-table__desc fade-up">
+              불필요한 개발 공수와 투자 부담 없이<br />
+              더 간편하게 직승인 환경을 구축할 수 있습니다.
+            </p>
+          </div>
           <div class="comparison-table__wrap">
             <table class="comparison-table__table body2">
               <colgroup>
@@ -347,15 +371,18 @@
 
       <section class="sc why-dap" aria-labelledby="why-dap-title">
         <div class="sc__inner comparison-table__inner">
-          <h2 id="why-dap-title" class="sc__title why-dap__title">
-            지금, DAP이 필요한 이유
-          </h2>
-
-          <p class="sc__desc why-dap__desc">
-            가맹점과 카드사 모두 비용 부담과<br class="br-mobile" />
-            기존 결제 구조의 한계에 직면해 있습니다.<br />이제는 더 효율적인
-            결제 환경이 필요한 시점입니다.
-          </p>
+          <div class="text__clip">
+            <h2 id="why-dap-title" class="sc__title why-dap__title fade-up">
+              지금, DAP이 필요한 이유
+            </h2>
+          </div>
+          <div class="text__clip">
+            <p class="sc__desc why-dap__desc fade-up">
+              가맹점과 카드사 모두 비용 부담과<br class="br-mobile" />
+              기존 결제 구조의 한계에 직면해 있습니다.<br />이제는 더 효율적인
+              결제 환경이 필요한 시점입니다.
+            </p>
+          </div>
           <div class="why-dap__grid">
             <!-- 가맹점 -->
             <article class="why-dap-card why-dap-card--merchant">
@@ -442,16 +469,21 @@
       <!-- clients -->
       <section class="sc clients" aria-labelledby="clients-title">
         <div class="sc__inner clients__inner">
-          <h2 id="clients-title" class="sc__title clients__title">
-            DAP 도입 가맹점
-          </h2>
-          <p class="sc__desc clients__desc">
-            온라인 오프라인 가맹점들이 DAP직승인 모델을 선택하여<br
-              class="br-mobile"
-            />
-            수수료 비용을 절감하면서 이를 바탕으로<br />
-            고객 마케팅을 강화하여 매출을 증대시키고 있습니다.<br />
-          </p>
+          <div class="text__clip">
+            <h2 id="clients-title" class="sc__title clients__title fade-up">
+              DAP 도입 가맹점
+            </h2>
+          </div>
+          <div class="text__clip">
+            <p class="sc__desc clients__desc fade-up">
+              온라인 오프라인 가맹점들이 DAP직승인 모델을 선택하여<br
+                class="br-mobile"
+              />
+              수수료 비용을 절감하면서<br class="br-pc" />
+              이를 바탕으로<br class="br-mobile" />
+              고객 마케팅을 강화하여 매출을 증대시키고 있습니다.<br />
+            </p>
+          </div>
           <ul class="clients__list">
             <li class="clients__card">
               <img
@@ -519,15 +551,19 @@
       <!-- cta -->
       <section class="sc cta" aria-labelledby="cta-title">
         <div class="sc__inner cta__inner">
-          <h2 id="cta-title" class="sc__title cta__title">
-            기존 결제 구조의 한계를 넘어<br />
-            DAP으로 더 효율적인<br />결제 환경을 시작하세요
-          </h2>
-          <p class="sc__desc cta__desc">
-            도입 의향서 제출을 통해 <br class="br-mobile" />
-            카드사와의 협의 및 기술 지원을 제공합니다. <br />
-            (필요시 전문 컨설팅그룹의 비용절감 컨설팅 제공)
-          </p>
+          <div class="text__clip">
+            <h2 id="cta-title" class="sc__title cta__title fade-up">
+              기존 결제 구조의 한계를 넘어<br />
+              DAP으로 더 효율적인<br />결제 환경을 시작하세요
+            </h2>
+          </div>
+          <div class="text__clip">
+            <p class="sc__desc cta__desc fade-up">
+              도입 의향서 제출을 통해 <br class="br-mobile" />
+              카드사와의 협의 및 기술 지원을 제공합니다. <br />
+              (필요시 전문 컨설팅그룹의 비용절감 컨설팅 제공)
+            </p>
+          </div>
           <div class="cta-action">
             <button type="button" class="btn btn-filled-primary w-full">
               도입 의향서 작성하기
@@ -644,3 +680,26 @@
     </main>
   </body>
 </html>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".sc").forEach((section) => {
+    const items = section.querySelectorAll(".fade-up");
+    if (!items.length) return;
+
+    gsap.set(items, { y: 50, autoAlpha: 0 });
+
+    gsap.to(items, {
+      y: 0,
+      autoAlpha: 1,
+      duration: 1,
+      ease: "power3.out",
+      stagger: 0.25,
+      scrollTrigger: {
+        trigger: section,
+        start: "top 80%",
+        toggleActions: "play none none reset",
+      },
+    });
+  });
+</script>

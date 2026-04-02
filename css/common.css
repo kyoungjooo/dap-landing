@@ -99,7 +99,7 @@ body {font-family: var(--ff-primary); font-variant-numeric: tabular-nums; word-b
 .title3{font-size: clamp(1.25rem, 2.2vw, 2.25rem);line-height: 1.5;} /* 20 ~ 36 */
 .title4{font-size: clamp(1.125rem, 1.6vw, 1.5rem);line-height: 1.5;} /* 18 ~ 24 */
 .body1{font-size: clamp(1rem, 1.2vw, 1.25rem);line-height: 1.5;} /* 16 ~ 20 */
-.body2{font-size: clamp(0.9375rem, 1vw, 1.125rem);line-height: 1.5;} /* 15 ~ 18 */
+.body2{font-size: clamp(0.9375rem, 1.25vw, 1.125rem);line-height: 1.5;} /* 15 ~ 18 */
 .body3{font-size: clamp(0.875rem, 1vw, 1rem);line-height: 1.5;} /* 14 */
 
 .f-bold { font-weight: 600; }
@@ -109,6 +109,7 @@ body {font-family: var(--ff-primary); font-variant-numeric: tabular-nums; word-b
 
 .sr-only{position:absolute; width:1px;height:1px;overflow:hidden;clip-path: inset(50%);white-space:nowrap;}
 
+.text__clip{overflow: hidden;}
 
 /* br */
 .br-mobile{display:inline;}
