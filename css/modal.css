@@ -1,0 +1,58 @@
+/* modal */
+.modal[hidden]{display: none;}
+.modal{position: fixed;inset: 0;z-index: 1000;  display: flex;align-items: center;justify-content: center;}
+.modal__backdrop{position: absolute;inset: 0;background: var(--modal-bg);}
+.modal__dialog{position: relative;z-index: 1;width: calc(100% - 2rem); margin: 0.5rem auto;outline: none;}
+.modal__body{ padding-inline: var(--space-16) var(--space-12); overflow: auto;}
+.modal__inner{display: flex;flex-direction: column;background: var(--modal-surface); border-radius: 1rem;box-shadow: var(--shadow-1);   max-height: 80vh;  overflow: hidden; }
+.modal__header{display: flex;align-items: center;justify-content: space-between;gap: 1rem;padding: var(--space-16) var(--space-4) var(--space-12) var(--space-16)}
+.modal__close-btn{flex-shrink: 0;width: 3rem;height: 3rem;border: 0;border-radius: 999px;background: transparent;line-height: 1;cursor: pointer;}
+.modal__close-btn:focus-visible{outline: 3px solid var(--text-sub1);outline-offset: 2px;}
+.modal__close-icon{display: inline-block;width: 1.5rem;height: 1.5rem;background: url("../source/images/icon-close.svg") center / 100% no-repeat;}
+
+/* form */
+.intent-form{display: flex;flex-direction: column;min-height: 0;}
+.intent-form__body{padding: 0 1.25rem 1.25rem;overflow: auto;}
+.form-group__required,.form-group__merchant{display: flex; flex-direction: column; gap: var(--space-20);}
+.form-field{display: flex; flex-direction: column; gap: clamp(var(--space-8), 0.5556vw, var(--space-12));}
+.form-field__label,
+.form-group__title{display: inline-block;color: var(--text-sub1);font-weight: 600;font-size: clamp(0.875rem, 1vw, 1rem);line-height: 1.5;}
+.form-field__required{color: #ef4444;}
+.form-field__input{width: 100%;min-height: 2.625rem;padding: 0 1rem;border: 1px solid var(--modal-border);border-radius: var(--radius-sm);background: var(--modal-input-bg);color: var(--modal-text);font-size: clamp(0.9375rem, 1.25vw, 1.125rem);line-height: 1.5;box-sizing: border-box;}
+.form-field__input::placeholder{color: var(--text-disabled)}
+.form-field__input:focus{border-color: var(--text-sub1);outline: 3px solid rgba(139, 92, 246, 0.16);background: #fff;}
+.form-group{margin: 2rem 0 0;padding: 0;border: 0;}
+.form-group__title{margin-bottom: 1rem;}
+.form-group__merchant{padding-bottom: var(--space-40);}
+
+
+/* footer */
+.intent-form__footer{
+  position: sticky;
+  bottom: 0;
+  padding: var(--space-8) var(--space-16);
+  background: linear-gradient(to top, #ffffff 75%, rgba(255,255,255,0));
+}
+
+.intent-form__submit{
+  width: 100%;
+  min-height: 4.5rem;
+  border: 0;
+  border-radius: 1rem;
+  background: var(--color-white);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  box-shadow: 0 12px 32px rgba(124, 58, 237, 0.2);
+  cursor: pointer;
+}
+.intent-form__submit:focus-visible{outline: 3px solid var(--color-black);outline-offset: 3px;}
+.intent-form__footer button{max-width: none;}
+
+@media (min-width:768px){
+.modal__dialog{width: 50%;}
+.modal__body{ padding-inline: var(--space-36) var(--space-32);}
+.modal__header{padding: var(--space-36) var(--space-12) var(--space-28) var(--space-36)}
+.intent-form__footer{padding:var(--space-24) var(--space-36); }
+}

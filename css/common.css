@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url("./reset.css");
+@import url("./modal.css");
 @import url("./main.css");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -15,8 +16,9 @@
 --color-text-sub: rgba(255, 255, 255, 0.88);
 --color-primary: #2962FF;
 --color-primary-hover: #1E54EA;
---color-focus: #ffd54a;
+--color-focus: #111111;
 --color-white:#ffffff;
+--color-black: #111111;
 
 /* blue */
 --blue-50: #F6F9FF;
@@ -80,6 +82,13 @@
   /* shadow */
   --shadow-1: 2px 2px 8px rgba(0,39,114,0.05);
 
+  /* modal */
+  --modal-bg:rgb(0,0,0,.5);
+  --modal-border:#E4E4E7;
+  --modal-input-bg: #fff;  
+  --modal-text: #767676;
+  --modal-surface: #fff;  
+
 }
 @media (min-width:1200px){
   :root{
@@ -93,6 +102,10 @@
 
 
 body {font-family: var(--ff-primary); font-variant-numeric: tabular-nums; word-break: keep-all;overflow-wrap: break-word; background-color: var(--blue-50); color: var(--text-main);}
+body.fixed {overflow: hidden;}
+::-webkit-scrollbar {width: 5px; height: 5px; background: #dfdfdf;}
+::-webkit-scrollbar-thumb {background: var(--scrollbar-color);}
+
 .headline1{font-size: clamp(1.75rem,4.3056vw,3.875rem); line-height: 135%;} /* 28px */
 .title1{font-size: clamp(1.75rem, 4vw, 4rem);line-height: 1.35;} /* 28 ~ 64 */
 .title2{font-size: clamp(1.5rem, 3vw, 3rem);line-height: 1.40;} /* 24 ~ 48 */
@@ -100,7 +113,7 @@ body {font-family: var(--ff-primary); font-variant-numeric: tabular-nums; word-b
 .title4{font-size: clamp(1.125rem, 1.6vw, 1.5rem);line-height: 1.5;} /* 18 ~ 24 */
 .body1{font-size: clamp(1rem, 1.2vw, 1.25rem);line-height: 1.5;} /* 16 ~ 20 */
 .body2{font-size: clamp(0.9375rem, 1.25vw, 1.125rem);line-height: 1.5;} /* 15 ~ 18 */
-.body3{font-size: clamp(0.875rem, 1vw, 1rem);line-height: 1.5;} /* 14 */
+.body3{font-size: clamp(0.875rem, 1vw, 1rem);line-height: 1.5;} /* 14 ~ 16 */
 
 .f-bold { font-weight: 600; }
 .f-semibold { font-weight: 500; }

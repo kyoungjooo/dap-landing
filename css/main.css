@@ -68,12 +68,11 @@ background:
 
 /* benefits */
 .benefits{
- .benefits__item{background: var(--color-white); text-align: center; border-radius: var(--radius-xl);}
- .benefits__item{padding: var(--space-24) var(--space-16); box-shadow: var(--shadow-1);}
- .benefit-card{height: 100%;} 
+
+ .benefit-card{background: var(--color-white); text-align: center; border-radius: var(--radius-xl);transition: transform 0.2s ease; height: 100%;padding: var(--space-24) var(--space-16); box-shadow: var(--shadow-1);} 
  .benefit-card__icon{ position: relative; margin: 0 auto;  width: clamp(62px, 5.694vw, 82px); border-radius: 999px;  aspect-ratio: 1/1; background-color: var(--blue-100);}
- .benefit-card__icon::before{content: "";border-radius: 999px;display: block;background-position: center;background-repeat: no-repeat;background-size: contain;position: absolute;inset: 0;}
- .benefits__list{display: grid; gap: var(--gap); overflow: hidden;}
+ .benefit-card__icon::before{content: "";border-radius: 999px;display: block;background-position: center;background-repeat: no-repeat;background-size: contain;position: absolute;inset: 0; opacity: 0.8;}
+ .benefits__list{display: grid; gap: var(--gap); }
  .benefits__item:first-of-type .benefit-card__icon::before{ background-image: url("../source/images/benefit01.png") }
  .benefits__item:nth-of-type(2) .benefit-card__icon::before{ background-image: url("../source/images/benefit02.png") }
  .benefits__item:nth-of-type(3) .benefit-card__icon::before{ background-image: url("../source/images/benefit03.png") }
@@ -82,6 +81,13 @@ background:
  .benefit-card__divider{width: 50px; border:0;border-top:1.5px solid var(--blue-100); margin-block: var(--space-16);}
  .benefit-card__desc{color: var(--text-sub1);}
  
+ @media (hover: hover) {
+ .benefit-card:hover{
+    transform: scale(1.05);
+  }
+ }
+
+
  @media (min-width:768px){
  .benefits__list{grid-template-columns: repeat(3,1fr);}
  .benefits__item{padding-block: var(--space-36);}
@@ -120,7 +126,7 @@ background:
 .comparison-table{
 background: linear-gradient(135deg, #1D3154 0%, #0039A4 100%);
 .comparison-table__title{color: var(--color-text);}
-.comparison-table__desc{color:#8D97C1}
+.comparison-table__desc{color: #9CB5E7;}
 .comparison-table__title{font-weight: 600;}
 .comparison-table__desc{opacity: 0.7;}
 .comparison-table__inner{padding-block: clamp(var(--space-80),10.4167vw, 9.375rem); text-align: center;}
