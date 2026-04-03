@@ -156,11 +156,11 @@ background: linear-gradient(135deg, #1D3154 0%, #0039A4 100%);
 }
 .why-dap-card__list{display:flex;flex-direction:column;gap:var(--space-16);}
 .why-dap-card__item{display:flex;align-items:flex-start;gap:var(--space-8)}
-.why-dap-card__item::before{content:"";display: inline-block;width: clamp(14px,1.3889vw, 20px);aspect-ratio: 1/1; position: relative; margin-top: 0.25em; flex-shrink: 0; background:url("../source/images/checkbox-purple.png") center / 100% no-repeat;}
+.why-dap-card__item::before{content:"";display: inline-block;width: clamp(14px,1.3889vw, 20px);aspect-ratio: 1/1; position: relative; margin-top: 0.3em; flex-shrink: 0; background:url("../source/images/checkbox-purple.png") center / 100% no-repeat;}
 .why-dap-card--issuer .why-dap-card__item::before{  background:url("../source/images/checkbox-blue.png") center / 100% no-repeat;}
 .why-dap-card--merchant .why-dap-card__heading{color:#311B92}
 .why-dap-card--issuer .why-dap-card__heading{color: #002871}
-.why-dap-card__heading{ font-weight: 500;}
+.why-dap-card__heading{ font-weight: 600;}
 .why-dap-card__desc{color:var(--text-sub1); margin-top: var(--space-4);}
 
 @media (min-width:580px){
