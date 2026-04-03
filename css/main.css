@@ -16,21 +16,11 @@ height: 100vh; display: flex; align-items: center; justify-content: center; over
 .hero__bg {
 position: absolute;inset: 0;
 background:
-    linear-gradient(
-      180deg,
-    rgba(1, 44, 127, 1) 0%,
-    rgba(31, 81, 191, 1) 50%,
-    rgba(1, 44, 127, 1) 100%
-    );pointer-events: none;z-index: -1;
+   linear-gradient(135deg, rgba(21, 58, 145, 1) 30%, rgb(26 43 90) 100%);;pointer-events: none;z-index: -1;
 }
 .hero__desc{color: #9CB5E7;}}
-.hero__visual{width: clamp(480px, 48vw, 700px);min-height: 250px;margin-top: clamp(var(--space-20),5.5556vw, var(--space-80)); background:url("../source/images/hero.png") center / contain no-repeat;}
+.hero__visual{ min-height:17.5rem; width: clamp(31.25rem,62.5000vw, 56.25rem); aspect-ratio: 2/1; background:url("../source/images/hero.webp") center / contain no-repeat;}
 .hero__actions{width: 100%; display: flex; justify-content: center;}
-
-@media (min-width:768px){
-.hero__actions{margin-top: var(--space-40);}
-}
-
 
 
 
@@ -71,11 +61,11 @@ background:
 
  .benefit-card{background: var(--color-white); text-align: center; border-radius: var(--radius-xl);transition: transform 0.2s ease; height: 100%;padding: var(--space-24) var(--space-16); box-shadow: var(--shadow-1);} 
  .benefit-card__icon{ position: relative; margin: 0 auto;  width: clamp(62px, 5.694vw, 82px); border-radius: 999px;  aspect-ratio: 1/1; background-color: var(--blue-100);}
- .benefit-card__icon::before{content: "";border-radius: 999px;display: block;background-position: center;background-repeat: no-repeat;background-size: contain;position: absolute;inset: 0; opacity: 0.8;}
+ .benefit-card__icon::before{content: "";border-radius: 999px;display: block;background-position: center;background-repeat: no-repeat;background-size: contain;position: absolute;inset: 0; opacity: 0.85;}
  .benefits__list{display: grid; gap: var(--gap); }
- .benefits__item:first-of-type .benefit-card__icon::before{ background-image: url("../source/images/benefit01.png") }
- .benefits__item:nth-of-type(2) .benefit-card__icon::before{ background-image: url("../source/images/benefit02.png") }
- .benefits__item:nth-of-type(3) .benefit-card__icon::before{ background-image: url("../source/images/benefit03.png") }
+ .benefits__item:first-of-type .benefit-card__icon::before{ background-image: url("../source/images/benefit01.webp") }
+ .benefits__item:nth-of-type(2) .benefit-card__icon::before{ background-image: url("../source/images/benefit02.webp") }
+ .benefits__item:nth-of-type(3) .benefit-card__icon::before{ background-image: url("../source/images/benefit03.webp") }
  .benefit-card__title{margin-top: 1.1111em; margin-bottom: 0.2em;}
  .benefit-card__subtitle{color: var(--text-sub2);}
  .benefit-card__divider{width: 50px; border:0;border-top:1.5px solid var(--blue-100); margin-block: var(--space-16);}

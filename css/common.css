@@ -104,7 +104,7 @@
 body {font-family: var(--ff-primary); font-variant-numeric: tabular-nums; word-break: keep-all;overflow-wrap: break-word; background-color: var(--blue-50); color: var(--text-main);}
 body.fixed {overflow: hidden;}
 ::-webkit-scrollbar {width: 5px; height: 5px; background: #dfdfdf;}
-::-webkit-scrollbar-thumb {background: var(--scrollbar-color);}
+::-webkit-scrollbar-thumb {background: #A5C4FF}
 
 .headline1{font-size: clamp(1.75rem,4.3056vw,3.875rem); line-height: 135%;} /* 28px */
 .title1{font-size: clamp(1.75rem, 4vw, 4rem);line-height: 1.35;} /* 28 ~ 64 */
