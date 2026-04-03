@@ -18,35 +18,16 @@
 .form-field__label,
 .form-group__title{display: inline-block;color: var(--text-sub1);font-weight: 600;font-size: clamp(0.875rem, 1vw, 1rem);line-height: 1.5;}
 .form-field__required{color: #ef4444;}
-.form-field__input{width: 100%;min-height: 2.625rem;padding: 0 1rem;border: 1px solid var(--modal-border);border-radius: var(--radius-sm);background: var(--modal-input-bg);color: var(--modal-text);font-size: clamp(0.9375rem, 1.25vw, 1.125rem);line-height: 1.5;box-sizing: border-box;}
+.form-field__input{width: 100%;min-height: 2.625rem;padding: 0 1rem;border: 1px solid var(--modal-border);border-radius: var(--radius-sm); color: var(--modal-text);font-size: clamp(0.9375rem, 1vw, 1rem);line-height: 1.5;box-sizing: border-box;}
 .form-field__input::placeholder{color: var(--text-disabled)}
-.form-field__input:focus{border-color: var(--text-sub1);outline: 3px solid rgba(139, 92, 246, 0.16);background: #fff;}
+.form-field__input:focus{border-color: var(--text-sub1);outline: 1px solid var(--color-primary);background: #fff;}
 .form-group{margin: 2rem 0 0;padding: 0;border: 0;}
 .form-group__title{margin-bottom: 1rem;}
 .form-group__merchant{padding-bottom: var(--space-40);}
 
 
 /* footer */
-.intent-form__footer{
-  position: sticky;
-  bottom: 0;
-  padding: var(--space-8) var(--space-16);
-  background: linear-gradient(to top, #ffffff 75%, rgba(255,255,255,0));
-}
-
-.intent-form__submit{
-  width: 100%;
-  min-height: 4.5rem;
-  border: 0;
-  border-radius: 1rem;
-  background: var(--color-white);
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.2;
-  box-shadow: 0 12px 32px rgba(124, 58, 237, 0.2);
-  cursor: pointer;
-}
+.intent-form__footer{position: sticky;bottom: 0; padding: var(--space-8) var(--space-16)  var(--space-12);background: linear-gradient(to top, #ffffff 75%, rgba(255,255,255,0));}
 .intent-form__submit:focus-visible{outline: 3px solid var(--color-black);outline-offset: 3px;}
 .intent-form__footer button{max-width: none;}
 
